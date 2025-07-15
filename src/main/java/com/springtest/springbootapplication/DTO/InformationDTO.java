@@ -1,21 +1,19 @@
 package com.springtest.springbootapplication.DTO;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
 public class InformationDTO {
-    private String titulo;
+    private String title;
 
-    private String descripcion;
+    private String description;
 
-    public InformationDTO(String titulo, String descripcion) {
-        this.titulo = titulo;
-        this.descripcion = descripcion;
+    public InformationDTO(String title, String description) {
+        this.title = title;
+        this.description = description;
     }
-
-    public String getTitulo() {
-        return titulo;
-    }
-
-    public String getDescripcion() {
-        return descripcion;
-    }
-
 }

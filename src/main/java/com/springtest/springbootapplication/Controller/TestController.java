@@ -10,7 +10,7 @@ public class TestController {
 
     @GetMapping("/test")
     public String test(Map<String, Object> model) {
-        model.put("Titulo", "Test is working!");
+        model.put("Title", "Body of the test");
         return "test";
     }
 }

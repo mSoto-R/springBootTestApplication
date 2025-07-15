@@ -4,6 +4,9 @@ import com.springtest.springbootapplication.DTO.InformationDTO;
 
 public class InformationService {
     public InformationDTO getInfo() {
-        return new InformationDTO("Info is working!", "Descripcion");
+        InformationDTO informationDTO = new InformationDTO();
+        informationDTO.setTitle("Title of the Information");
+        informationDTO.setDescription("Description of the Information");
+        return informationDTO;
     }
 }

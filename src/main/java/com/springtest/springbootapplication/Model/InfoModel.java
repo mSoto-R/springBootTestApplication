@@ -1,35 +1,17 @@
 package com.springtest.springbootapplication.Model;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class InfoModel {
-    private String titulo, subtitulo, descripcion;
+    private String title, subtitle, description;
 
-    public InfoModel(String titulo, String subtitulo, String descripcion) {
-        this.titulo = titulo;
-        this.subtitulo = subtitulo;
-        this.descripcion = descripcion;
+    public InfoModel(String title, String subtitle, String description) {
+        this.title = title;
+        this.subtitle = subtitle;
+        this.description = description;
     }
 
-    public String getTitulo() {
-        return titulo;
-    }
-
-    public String getSubtitulo() {
-        return subtitulo;
-    }
-
-    public String getDescripcion() {
-        return descripcion;
-    }
-
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
-
-    public void setSubtitulo(String subtitulo) {
-        this.subtitulo = subtitulo;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
 }
