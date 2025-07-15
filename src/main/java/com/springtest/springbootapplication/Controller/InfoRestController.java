@@ -15,8 +15,7 @@ public class InfoRestController {
 
     @RequestMapping(path = "/getInfo", method = RequestMethod.GET)
     public InformationDTO getInfo() {
-        
-        InformationDTO info = informationService.getInfo();
-        return info;
+
+        return informationService.getInfo();
     }
 }

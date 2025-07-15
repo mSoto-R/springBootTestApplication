@@ -13,7 +13,7 @@ public class InfoModel {
         return titulo;
     }
 
-    public String getSubtitulo() { 
+    public String getSubtitulo() {
         return subtitulo;
     }
 
