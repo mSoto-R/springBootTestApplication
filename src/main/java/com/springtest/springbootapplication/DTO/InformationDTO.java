@@ -1,11 +1,11 @@
 package com.springtest.springbootapplication.DTO;
 
-public class InformacionDTO {
+public class InformationDTO {
     private String titulo;
 
     private String descripcion;
 
-    public InformacionDTO(String titulo, String descripcion) {
+    public InformationDTO(String titulo, String descripcion) {
         this.titulo = titulo;
         this.descripcion = descripcion;
     }
@@ -17,5 +17,5 @@ public class InformacionDTO {
     public String getDescripcion() {
         return descripcion;
     }
-    
+
 }

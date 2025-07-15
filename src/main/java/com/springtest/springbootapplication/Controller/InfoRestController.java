@@ -4,14 +4,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.springtest.springbootapplication.DTO.InformacionDTO;
+import com.springtest.springbootapplication.DTO.InformationDTO;
+import com.springtest.springbootapplication.Service.InformationService;
 
 @RestController
+
 @RequestMapping("/general")
 public class InfoRestController {
+    InformationService informationService = new InformationService();
 
-    @RequestMapping(path = "/info", method = RequestMethod.GET)
-    public InformacionDTO info() {
-        return new InformacionDTO("Info is working!", "Descripcion");
+    @RequestMapping(path = "/getInfo", method = RequestMethod.GET)
+    public InformationDTO getInfo() {
+        
+        InformationDTO info = informationService.getInfo();
+        return info;
     }
 }
